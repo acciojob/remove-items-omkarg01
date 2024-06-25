@@ -2,11 +2,8 @@
 const selector = document.getElementById("colorSelect");
 const btn = document.querySelector('input');
 
-btn.addEventListener("click", function(){
-	console.log("Hello");
-	const options = document.querySelector('option');
-	selector.removeChild(options[0])
+btn.addEventListener("click", function () {
+    console.log("Hello");
+    let selectedOption = selector.options[selector.selectedIndex];
+    selector.removeChild(selectedOption);
 });
-
-
-
